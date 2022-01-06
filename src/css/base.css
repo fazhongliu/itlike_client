@@ -1,6 +1,16 @@
 @import "normalize.css";
+@import "//at.alicdn.com/t/font_3122650_zqk52bd7fhg.css";
 .bx {
   width: 1205px;
   margin: 0 auto;
 }
-/*# sourceMappingURL=base.css.map */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

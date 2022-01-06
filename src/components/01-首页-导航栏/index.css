@@ -1,9 +1,4 @@
-@import "normalize.css";
-@import "//at.alicdn.com/t/font_3122650_zqk52bd7fhg.css";
-.bx {
-  width: 1205px;
-  margin: 0 auto;
-}
+@import "../../css/base.css";
 #nav-bar {
   height: 140px;
   background-color: #fff;
@@ -86,7 +81,71 @@
 }
 #nav-bar .content .top .right {
   flex: 1;
-  background-color: deeppink;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-bar .content .top .right .intro {
+  height: 50px;
+  position: relative;
+}
+#nav-bar .content .top .right .intro:hover .operation-pane {
+  display: block;
+}
+#nav-bar .content .top .right .intro .user {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+#nav-bar .content .top .right .intro .user .nick-name {
+  font-size: 16px;
+  color: #666;
+  margin-right: 10px;
+}
+#nav-bar .content .top .right .intro .user .header {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+#nav-bar .content .top .right .intro .operation-pane {
+  width: 160px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  display: none;
+  box-shadow: 0 1px 12px 3px grey;
+}
+#nav-bar .content .top .right .intro .operation-pane::after {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation {
+  padding: 5px;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation li {
+  line-height: 34px;
+  font-size: 12px;
+  color: #666666;
+  padding: 5px;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation li a {
+  font-size: 12px;
+  color: #666666;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation li:first-child {
+  border-bottom: 1px solid #eaeaea;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation li:last-child {
+  border-top: 1px solid #eaeaea;
+}
+#nav-bar .content .top .right .intro .operation-pane .operation li:hover {
+  background-color: #f3f4f6;
+  cursor: pointer;
 }
 #nav-bar .content .bottom {
   height: 40px;
