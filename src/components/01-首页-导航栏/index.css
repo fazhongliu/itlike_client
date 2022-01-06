@@ -1,0 +1,103 @@
+@import "normalize.css";
+@import "//at.alicdn.com/t/font_3122650_zqk52bd7fhg.css";
+.bx {
+  width: 1205px;
+  margin: 0 auto;
+}
+#nav-bar {
+  height: 140px;
+  background-color: #fff;
+}
+#nav-bar .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#nav-bar .content .top {
+  flex: 1;
+  display: flex;
+}
+#nav-bar .content .top .left {
+  flex: 1;
+}
+#nav-bar .content .top .left .logo {
+  width: 193px;
+  height: 65px;
+}
+#nav-bar .content .top .left .logo a {
+  font-size: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#nav-bar .content .top .center {
+  flex: 2;
+}
+#nav-bar .content .top .center .search-bar {
+  width: 400px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #999;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#nav-bar .content .top .center .search-bar .category {
+  flex: 1;
+}
+#nav-bar .content .top .center .search-bar .category select {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: #666;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+#nav-bar .content .top .center .search-bar .keyword {
+  flex: 4;
+}
+#nav-bar .content .top .center .search-bar .keyword input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+#nav-bar .content .top .center .search-bar .submit-btn {
+  flex: 1;
+}
+#nav-bar .content .top .center .search-bar .submit-btn input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #fff;
+  background-color: #51b257;
+  cursor: pointer;
+}
+#nav-bar .content .top .right {
+  flex: 1;
+  background-color: deeppink;
+}
+#nav-bar .content .bottom {
+  height: 40px;
+  display: flex;
+}
+#nav-bar .content .bottom .left {
+  flex: 1;
+  background-color: lawngreen;
+}
+#nav-bar .content .bottom .right {
+  flex: 1;
+  background-color: pink;
+}
+/*# sourceMappingURL=index.css.map */
