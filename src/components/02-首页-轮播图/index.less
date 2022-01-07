@@ -1,0 +1,90 @@
+@import "../../css/base.css";
+@import "../../config/colorConfig";
+
+.like-lb {
+  min-width: 1205px;
+  height: 360px;
+  position: relative;
+
+  .images {
+    height: 100%;
+    position: relative;
+    li {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      transition: opacity 1s linear 0s;
+      opacity: 0;
+      //display: none;
+      &.current{
+        opacity: 1;
+        //display: block;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+        img {
+          width: 1205px;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .titles {
+    width: 280px;
+    height: 274px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    /* 以下代码 兼容浏览器 隐藏scrollbar */
+
+    &::-webkit-scrollbar {
+      display: none; /*Chrome Safari */
+    }
+
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE10 */
+    /* 以上代码 兼容浏览器 隐藏scrollbar */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: ~"calc((100% - 1205px)/2)";
+
+    li {
+      padding: 0 5px;
+      position: relative;
+
+      &.current,
+      &:hover {
+        a {
+          color: @themeColor;
+        }
+
+        &::before {
+          content: "";
+          border: 8px solid transparent;
+          border-right-color: @themeColor;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+        }
+      }
+
+      a {
+        display: block;
+        line-height: 40px;
+        padding: 0 10px 0 20px;
+        font-size: 16px;
+        color: #e0e0e0;
+      }
+    }
+  }
+}

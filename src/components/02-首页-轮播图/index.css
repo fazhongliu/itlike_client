@@ -1,0 +1,81 @@
+@import "../../css/base.css";
+.like-lb {
+  min-width: 1205px;
+  height: 360px;
+  position: relative;
+}
+.like-lb .images {
+  height: 100%;
+  position: relative;
+}
+.like-lb .images li {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s linear 0s;
+  opacity: 0;
+}
+.like-lb .images li.current {
+  opacity: 1;
+}
+.like-lb .images li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+}
+.like-lb .images li a img {
+  width: 1205px;
+  height: 100%;
+}
+.like-lb .titles {
+  width: 280px;
+  height: 274px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  /* 以下代码 兼容浏览器 隐藏scrollbar */
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE10 */
+  /* 以上代码 兼容浏览器 隐藏scrollbar */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc((100% - 1205px)/2);
+}
+.like-lb .titles::-webkit-scrollbar {
+  display: none;
+  /*Chrome Safari */
+}
+.like-lb .titles li {
+  padding: 0 5px;
+  position: relative;
+}
+.like-lb .titles li.current a,
+.like-lb .titles li:hover a {
+  color: #51b257;
+}
+.like-lb .titles li.current::before,
+.like-lb .titles li:hover::before {
+  content: "";
+  border: 8px solid transparent;
+  border-right-color: #51b257;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.like-lb .titles li a {
+  display: block;
+  line-height: 40px;
+  padding: 0 10px 0 20px;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+/*# sourceMappingURL=index.css.map */
