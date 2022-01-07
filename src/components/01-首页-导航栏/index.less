@@ -104,13 +104,16 @@
         .intro {
           height: 50px;
           position: relative;
-          &:hover .operation-pane{
+
+          &:hover .operation-pane {
             display: block;
           }
+
           .user {
             height: 32px;
             display: flex;
             align-items: center;
+
             .nick-name {
               font-size: 16px;
               color: #666;
@@ -123,6 +126,7 @@
               border-radius: 16px;
             }
           }
+
           .operation-pane {
             width: 160px;
             background-color: #fff;
@@ -132,6 +136,8 @@
             right: 0;
             display: none;
             box-shadow: 0 1px 12px 3px grey;
+            z-index: 999;
+
             &::after {
               content: "";
               border: 10px solid transparent;
@@ -140,24 +146,30 @@
               top: -20px;
               right: 10px;
             }
+
             .operation {
               padding: 5px;
+
               li {
                 line-height: 34px;
                 font-size: 12px;
                 color: #666666;
                 padding: 5px;
+
                 a {
                   font-size: 12px;
                   color: #666666;
                 }
+
                 &:first-child {
                   border-bottom: 1px solid #eaeaea;
                 }
-                &:last-child{
+
+                &:last-child {
                   border-top: 1px solid #eaeaea;
                 }
-                &:hover{
+
+                &:hover {
                   background-color: #f3f4f6;
                   cursor: pointer;
                 }
@@ -175,12 +187,99 @@
 
       .left {
         flex: 1;
-        background-color: lawngreen;
+
+        .menus {
+          height: 100%;
+          display: flex;
+          li {
+            position: relative;
+            &.current,
+            &:hover {
+              a {
+                color: @themeColor;
+              }
+              &::after {
+                content: "";
+                display: block;
+                height: 5px;
+                width: ~"calc(100% - 40px)";
+                background-color: @themeColor;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+
+            a {
+              height: 100%;
+              line-height: 40px;
+              padding: 0 20px;
+              font-size: 18px;
+              color: #333;
+            }
+          }
+        }
       }
 
       .right {
         flex: 1;
-        background-color: pink;
+        //background-color: pink;
+        ul {
+          height: 100%;
+          display: flex;
+          justify-content: flex-end;
+          li {
+            margin-left: 20px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: #666666;
+            position: relative;
+            &:hover .ad-pane {
+              display: block;
+            }
+            &::before {
+              margin-left: 5px;
+            }
+            .ad-pane {
+              width: 240px;
+              background-color: #ffffff;
+              border-radius: 10px;
+              box-shadow: 0 1px 12px 3px grey;;
+              position: absolute;
+              top: 40px;
+              left: 50%;
+              transform: translateX(-50%);
+              display: none;
+              &::after {
+                content: "";
+                border: 8px solid transparent;
+                border-bottom-color: #ffffff;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -16px;
+              }
+              .title {
+                margin-top: 10px;
+                line-height: 26px;
+                font-size: 14px;
+                color: #333333;
+              }
+              .sub-title{
+                line-height: 24px;
+                font-size: 12px;
+                color: #666666;
+              }
+              .ewm{
+                width: 145px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
