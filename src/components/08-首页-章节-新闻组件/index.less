@@ -1,0 +1,32 @@
+@import "../../css/base.css";
+@import "../../config/colorConfig";
+
+.news-card {
+  ul {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 2px -1px 10px 0 rgba(0, 0, 0, .15);
+    padding:5px 10px;
+    li {
+      line-height: 36px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        font-size: 15px;
+        color: #333;
+        //下面三行代码，使内容太长时，不换行不显示，只显示为...
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        &:hover{
+          color: @themeColor;
+        }
+      }
+      span {
+        font-size: 15px;
+        color: #999;
+        min-width: 190px;
+      }
+    }
+  }
+}
