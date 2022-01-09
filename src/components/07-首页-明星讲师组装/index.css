@@ -50,6 +50,7 @@
   height: 150px;
   margin-top: 50px;
   box-shadow: 2px -1px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: #fff;
   display: flex;
 }
 .section .container > .teacher-card .left {

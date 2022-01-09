@@ -63,11 +63,12 @@
       }
     }
 
-    &>.teacher-card {
+    & > .teacher-card {
       min-width: 300px;
       height: 150px;
       margin-top: 50px;
       box-shadow: 2px -1px 10px 0 rgba(0, 0, 0, .15);
+      background-color: #fff;
       display: flex;
 
       .left {
@@ -84,6 +85,7 @@
           top: -30px;
           left: 50%;
           transform: translateX(-50%);
+
           &:hover {
             animation: itlike-rotate 6s linear 0s infinite;
           }
@@ -129,6 +131,7 @@
 
   }
 }
+
 @keyframes itlike-rotate {
   from {
     transform: translateX(-50%) rotateZ(0deg);
