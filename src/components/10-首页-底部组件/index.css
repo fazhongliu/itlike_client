@@ -57,6 +57,10 @@
   cursor: pointer;
   position: relative;
 }
+.footer .content .right .ad-image .ad-left:hover .ewm-pane,
+.footer .content .right .ad-image .ad-right:hover .ewm-pane {
+  display: block;
+}
 .footer .content .right .ad-image .ad-left .ewm-pane,
 .footer .content .right .ad-image .ad-right .ewm-pane {
   width: 120px;
@@ -81,18 +85,12 @@
 .footer .content .right .ad-image .ad-left:hover {
   background-position: -154px -174px;
 }
-.footer .content .right .ad-image .ad-left:hover .ewm-pane {
-  display: block;
-}
 .footer .content .right .ad-image .ad-right {
   margin-left: 20px;
   background-position: -220px -174px;
 }
 .footer .content .right .ad-image .ad-right:hover {
   background-position: -286px -174px;
-}
-.footer .content .right .ad-image .ad-right:hover .ewm-pane {
-  display: block;
 }
 .footer .content .right .hotline {
   font-size: 14px;

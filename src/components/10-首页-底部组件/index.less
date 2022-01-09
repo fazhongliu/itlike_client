@@ -72,6 +72,12 @@
           cursor: pointer;
           position: relative;
 
+          &:hover {
+            .ewm-pane {
+              display: block;
+            }
+          }
+
           .ewm-pane {
             width: 120px;
             height: 120px;
@@ -83,6 +89,7 @@
             left: 50%;
             transform: translateX(-50%);
             display: none;
+
             img {
               width: 110px;
               height: 110px;
@@ -95,9 +102,6 @@
 
           &:hover {
             background-position: -154px -174px;
-            .ewm-pane {
-              display: block;
-            }
           }
         }
 
@@ -107,9 +111,7 @@
 
           &:hover {
             background-position: -286px -174px;
-            .ewm-pane {
-              display: block;
-            }
+
           }
         }
       }
