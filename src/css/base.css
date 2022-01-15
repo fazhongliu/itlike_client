@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 
-ul,p
+ul,p,dl,dd
 {
   margin: 0;
   padding: 0;

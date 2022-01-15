@@ -1,0 +1,32 @@
+@import "../../css/base.css";
+.category-bar {
+  min-width: 1205px;
+  height: 40px;
+  background: linear-gradient(#f7f6f8, #fff 20%);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
+}
+.category-bar .content {
+  height: 100%;
+}
+.category-bar .content dl {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.category-bar .content dl dt {
+  color: #949fab;
+  font-size: 16px;
+}
+.category-bar .content dl dd {
+  line-height: 30px;
+  color: #6b6578;
+  padding: 0 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.category-bar .content dl dd.selected {
+  border-color: #51b257;
+  color: #51b257;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=index.css.map */
