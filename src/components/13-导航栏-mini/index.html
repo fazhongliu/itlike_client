@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>01-首页导航栏</title>
+    <title>13-导航栏-mini</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<div id="nav-bar">
-    <div class="content bx">
-        <div class="top">
+    <div class="navbar-mini">
+        <div class="content bx">
             <div class="left">
                 <h1 class="logo">
                     <a href="#">
                         撩学堂
                     </a>
                 </h1>
+                <ul class="menus">
+                    <li class="current"><a href="#">讲师</a></li>
+                    <li><a href="#">课程</a></li>
+                    <li><a href="#">文章</a></li>
+                </ul>
+
             </div>
             <div class="center">
                 <form action="">
@@ -36,12 +40,11 @@
                             </label>
                         </div>
                         <div class="submit-btn">
-                            <input type="submit"  class="iconfont" value="&#xe637;&nbsp;搜索">
+                            <input type="submit"  class="iconfont" value="&#xe637;">
                         </div>
                     </div>
                 </form>
             </div>
-
             <div class="right">
                 <div class="intro">
                     <div class="user">
@@ -59,38 +62,9 @@
                 </div>
             </div>
         </div>
-        <div class="bottom">
-            <div class="left">
-                <ul class="menus">
-                    <li class="current"><a href="#">首页</a></li>
-                    <li><a href="#">讲师</a></li>
-                    <li><a href="#">课程</a></li>
-                    <li><a href="#">新闻</a></li>
-                </ul>
-            </div>
-            <div class="right">
-                <ul>
-                    <li class="iconfont icon-liwu">
-                        关注领取礼物
-                        <div class="ad-pane">
-                            <div class="title">关注撩课公众号</div>
-                            <div class="sub-title">- 领取课程免费福利，超值学习资料 -</div>
-                            <img class="ewm" src="../../assets/images/ewm_lk.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="iconfont icon-xiaochengxu">
-                        微信小程序
-                        <div class="ad-pane">
-                            <div class="title">撩课小程序</div>
-                            <div class="sub-title">- 手机学习更方便 -</div>
-                            <img class="ewm" src="../../assets/images/ewm_lk.jpg" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
     </div>
-</div>
+
 
 </body>
 </html>
