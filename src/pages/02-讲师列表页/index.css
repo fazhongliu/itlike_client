@@ -188,6 +188,9 @@ body {
   cursor: pointer;
 }
 .category-bar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   min-width: 1205px;
   height: 40px;
   background: linear-gradient(#f7f6f8, #fff 20%);
