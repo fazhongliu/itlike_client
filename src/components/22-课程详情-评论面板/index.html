@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程详情-评论面板</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="comment-pane">
+    <div class="comment-title">
+        评论
+    </div>
+    <div class="form-pane">
+        <div class="comment-score">
+            <span>给该课程打分:</span>
+            <div class="star">
+                <div class="y_star" style="width: 100%"></div>
+            </div>
+        </div>
+        <label>
+            <textarea placeholder="请输入对该课程的评价" name="" id="" cols="30" rows="10" class="comment-content"></textarea>
+        </label>
+        <div class="submit">评论</div>
+    </div>
+
+</div>
+
+
+<script>
+    //实现评论面板 星星 评分效果
+    let score = 5
+    let star = document.querySelector(".comment-pane .star");
+    let y_star = document.querySelector(".comment-pane  .y_star");
+
+    star.onclick = function (event) {
+        // console.log(event.offsetX)
+        //上取整，计算星星数量
+        score = Math.ceil(event.offsetX / star.offsetWidth * 5)
+        // console.log(score)
+        y_star.style.width = score / 5 * 100 + "%";
+    }
+</script>
+
+<script>
+    //实现评论面板 点击评论按钮后，获得评价（分数和内容）
+    let submit = document.getElementsByClassName("submit")[0];
+    let content = document.getElementsByClassName("comment-content")[0];
+    submit.onclick = function () {
+        // 获取分数及评论内容
+        console.log("分数：", score)
+        let content_v = content.value ;
+        console.log("评论内容：", content_v)
+        // 调用网络接口，上传分数及评论内容至服务器
+
+    }
+</script>
+</body>
+</html>

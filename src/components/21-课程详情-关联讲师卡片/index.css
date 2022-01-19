@@ -1,0 +1,28 @@
+@import "../../css/base.css";
+.c-teacher {
+  max-width: 300px;
+  background-color: #fff;
+}
+.c-teacher a {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 2px #bbb;
+}
+.c-teacher a .top {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-teacher a .top img {
+  width: 75px;
+  height: 75px;
+}
+.c-teacher a .bottom {
+  line-height: 50px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666666;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */
