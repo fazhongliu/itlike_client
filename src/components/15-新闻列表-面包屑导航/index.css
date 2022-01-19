@@ -3,6 +3,7 @@
   min-width: 1205px;
   height: 50px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
 }
 .bread-nav .content {
   height: 100%;
