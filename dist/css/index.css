@@ -1,4 +1,4 @@
-@import "../../css/base.css";
+@import "base.css";
 body {
   background-color: #f5f5f5;
 }
@@ -29,7 +29,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/images/logo.png");
+  background-image: url("../assets/images/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -396,7 +396,7 @@ body {
 .section .container > .course-card > .image .tag {
   width: 48px;
   line-height: 23px;
-  background-image: url(../../assets/images/layout_css_sprites.png);
+  background-image: url(../assets/images/layout_css_sprites.png);
   background-position: -16px -57px;
   font-size: 12px;
   color: #fff;
@@ -442,12 +442,12 @@ body {
 .section .container > .course-card > .score > .star {
   width: 57px;
   height: 10px;
-  background-image: url(../../assets/images/layout_css_sprites.png);
+  background-image: url(../assets/images/layout_css_sprites.png);
   background-position: -91px -58px;
 }
 .section .container > .course-card > .score > .star > .y_star {
   height: 100%;
-  background-image: url(../../assets/images/layout_css_sprites.png);
+  background-image: url(../assets/images/layout_css_sprites.png);
   background-position: -10px -158px;
 }
 .section .container > .course-card > .score > .score_text {
@@ -612,7 +612,7 @@ body {
 .footer .content .right .ad-image .ad-right {
   width: 46px;
   height: 46px;
-  background-image: url(../../assets/images/layout_css_sprites2.png);
+  background-image: url(../assets/images/layout_css_sprites2.png);
   cursor: pointer;
   position: relative;
 }
@@ -684,14 +684,14 @@ body {
   margin-bottom: 30px;
   border-radius: 5px;
   box-sizing: border-box;
-  background-image: url(../../assets/images/layout_css_sprites2.png);
+  background-image: url(../assets/images/layout_css_sprites2.png);
   background-position: -83px -175px;
 }
 .fixed-contact .contact:hover {
   background-position: -11px -175px;
 }
 .fixed-contact .app {
-  background-image: url(../../assets/images/layout_css_sprites.png);
+  background-image: url(../assets/images/layout_css_sprites.png);
   background-position: -4px -94px;
   position: relative;
 }
@@ -718,7 +718,7 @@ body {
   height: 110px;
 }
 .fixed-contact .back-top {
-  background-image: url(../../assets/images/layout_css_sprites.png);
+  background-image: url(../assets/images/layout_css_sprites.png);
   background-position: -166px 2px;
 }
 .lr-mask {
